@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario Sena V1</title>
+  <link rel="stylesheet" href="_Css/styles.css" />
+  
+</head>
+<body>
+  <div class="container">
+    <h1>Formulario Sena V1</h1>
+    <p>GRACIAS POR DEJAR SUS DATOS</p>
+
+    <form id="formulariosenav1">
+      <!-- Nombre completo -->
+      <div class="form-group">
+        <label for="nombreCompleto">Name:</label><br>
+
+
+        <input type="text" id="nombreCompleto" name="nombreCompleto" required placeholder="place enter your name" />
+        <div id="errorNombre" class="mensaje-error"></div>
+        <div id="exitoNombre" class="mensaje-exito"></div>
+      </div>
+
+            <!-- Correo electrónico -->
+      <div class="form-group">
+        <label for="correo">email:</label><br>
+        <input type="email" id="correo" name="correo" required placeholder="place enter your email" />
+        <div id="errorCorreo" class="mensaje-error"></div>
+        <div id="exitoCorreo" class="mensaje-exito"></div>
+      </div>
+
+      <!-- Edad -->
+      <div class="form-group">
+        <label for="edad">age:</label> <br>
+
+        <input type="number" id="edad" name="edad" required placeholder="Your enter age" />
+      </div>
+
+      <div class="form-group">
+        <label for="option">Choose an option</label><br>
+        <select id="option" name="option">
+            <option value="">Select One 1</option>
+            <option value="">Select One 2</option>
+            <option value="">Select One 3</option>
+            <!-- Aquí puedes añadir más opciones -->
+        </select><br><br>
+           <p>Do you plan to buy a new car in the next 5 years?</p>
+          <label><input type="radio" name="car" value="yes"> Yes</label>
+    <label><input type="radio" name="car" value="no"> No</label>
+    <label><input type="radio" name="car" value="maybe"> Maybe</label>
+
+        <label for="car_brand">What is your favorite car brand?</label><br>
+        <select id="car_brand" name="car_brand">
+            <option value="">Select One 1</option>
+            <option value="">Select One 2</option>
+            <option value="">Select One 3</option>
+            <!-- Aquí puedes añadir más marcas -->
+        </select><br><br>
+
+        <p>What type of means of transportation do you own?</p>
+<div class="checkbox-group">
+  <label><input type="checkbox" name="transport" value="car">Car</label>
+  <label><input type="checkbox" name="transport" value="boat">Boat</label>
+  <label><input type="checkbox" name="transport" value="bicycle">Bicycle</label>
+  <label><input type="checkbox" name="transport" value="motorcycle">Motorcycle</label>
+  <label><input type="checkbox" name="transport" value="plane">Plane</label>
+  <label><input type="checkbox" name="transport" value="bike">Bike</label>
+</div>
+
+        <label for="comments">Any comments suggestions?</label><br>
+        <textarea id="comments" name="comments" placeholder="Please enter your comments"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+     
+  <script src="_js/formulario.js"></script>
+</body>
+</html>
