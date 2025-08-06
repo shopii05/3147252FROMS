@@ -1,15 +1,6 @@
 name: Linters
 
-on:
-  push:
-    branches:
-      - main
-      - develop
-      
-  pull_request:
-    branches:
-      - main
-      - develop
+on: pull_request
 
 env:
   FORCE_COLOR: 1
